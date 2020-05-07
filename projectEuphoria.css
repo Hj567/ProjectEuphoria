@@ -597,6 +597,20 @@ background-position: center;
 	display: none;
 }
 
+@font-face{
+	font-family: American Typewriter;
+	src:url(Font/AmericanTypewriter.ttc);
+	font-style: normal;
+}
+
+@font-face{
+	font-family: Yuanti SC;
+	src:url(Font/YuantiSC.ttf);
+	font-style: normal;
+}
+
+
+
 @media only screen and (max-width: 414px) {
 
 .homeSection1{
