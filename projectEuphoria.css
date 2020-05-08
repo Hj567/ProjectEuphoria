@@ -812,7 +812,7 @@ opacity: 0.7;
 	top: 375px;
 	right: 35px;
 	font-weight: 800;
-	font-family: 'Montserrat;
+	font-family: 'Montserrat';
 }
 
 .textFourWrapper{
@@ -821,7 +821,7 @@ opacity: 0.7;
 	top: 425px;
 	right: 35px;
 	font-weight: 800;
-	font-family: 'Montserrat;
+	font-family: 'Montserrat';
 }
 
 .textOneTutorial{
@@ -891,7 +891,7 @@ transform: translate(15px,-5px);
 	display: grid;
 	grid-template-columns: repeat(1,15%);
 	grid-template-rows: auto;
-	grid-gap: 1.5rem;
+	grid-gap: 20px;
 	
 }
 
@@ -945,7 +945,7 @@ background-size: 180px 160px;
 grid-column: 1/2;
 grid-row:2/2;
 height: 150px;
-width: 70px;
+width: 85px;
 background-image: url('Image 18.png');
 background-position: center;
 line-height: 130px;
@@ -972,13 +972,14 @@ background-size: 70px 150px;
 grid-column: 2/2;
 grid-row:2/2;
 height: 150px;
-width: 90px;
+width: 85px;
 background-image: url('Image 22.png');
 background-position: center;
   line-height: 150px;
   text-align: center;
   transition: 0.5s ease-in;
 background-size: 100px 150px;
+transform: translateX(10px);
 
 
 
