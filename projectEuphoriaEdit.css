@@ -640,7 +640,7 @@ overflow-x: hidden;
 
 .textContainer p:nth-child(1){
 
-	font-family: Montserrat;
+	font-family: 'Montserrat',sans-serif;
 	font-size: 30px;
 	font-weight: 300;
 	letter-spacing: 2px;
@@ -678,7 +678,7 @@ overflow-x: hidden;
 	border-radius: 50px;
 	background-image: linear-gradient(to left, #6C63FF, #9288F8);
 	color:#FFFFFF;
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 3px;
 	border: none;
 	font-size: 15px;
@@ -924,6 +924,7 @@ background-size: 140px 300px;
 
 	font-size: 35px;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 
 }
 
