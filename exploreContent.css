@@ -1,0 +1,231 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #EFF3F4
+}
+
+.body-wrapper{
+
+	width: 100%;
+	display: flex;
+}
+
+.sideNav{
+
+	width: 20%;
+	background-color: #FFF;
+	height: 100vh;
+	position: fixed;
+
+
+
+
+}
+
+.sideNav-wrapper{
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:70%;
+	justify-content: space-between;
+	transform: translateY(20%);
+
+
+}
+
+.a{
+	display: inline-flex;
+}
+
+
+.navWrapper li{
+
+list-style-type: none;
+margin-top: 10px;
+opacity: 0.6;
+
+
+
+}
+
+
+.navWrapper{
+
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-40%, -50%);
+	
+}
+
+.navWrapper li p{
+
+	margin-left: 40px;
+	font-size: 15px;
+	font-family: Montserrat;
+}
+
+
+.navWrapper li i {
+
+	font-size: 18px;
+	position: absolute;
+	transform: translateY(15px);
+}
+
+
+
+
+
+
+.mainContent{
+
+	width: 80%;
+	background-color: transparent;
+	height: 100vh;
+	position: absolute;
+	transform: translateX(300px);
+	
+	
+}
+
+
+
+.mainContent h2{
+
+	font-family: Montserrat;
+	position: absolute;
+	top: 7%;
+	margin-left: 5%;
+	letter-spacing: 2px;
+}
+
+
+.hello{
+
+height: 100px;
+width: 180px;
+background-color: white;
+
+
+}
+
+.item{
+	
+	position: absolute;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+
+
+.lSPager{
+
+	display: none;
+}
+
+
+.one{
+
+	transform: translateY(150px);
+}
+
+
+.item-wrapper p{
+
+
+	font-family: Montserrat;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+.hello img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.containerDiv{
+	
+	width: 180px;
+
+}
+.containerDiv p{
+
+	font-family: Montserrat;
+	font-size: 12px;
+	text-align: center;
+
+	
+
+}
+
+
+.videoDisplaySection{
+
+	width: 90%;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	
+}
+
+
+.videoContainer{
+
+	width: 70%;
+	background-color: white;
+	height: 300px;
+	
+
+}
+
+.buttonContainer{
+	width: 30%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.buttonContainer button{
+
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding: 15px 30px 15px 30px;
+border-radius: 50px;
+border: none;
+font-size: 10px;
+font-family: Montserrat;
+background-image: linear-gradient(to left, #6C63FF, #9288F8);
+color: #FFFFFF; 
+letter-spacing: 2px;
+font-weight: 700;
+margin-top: 10px;
+outline: none;
+
+}
+
+
+.buttonContainer img{
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 200px;
+	width: 200px;
+
+}
+
+

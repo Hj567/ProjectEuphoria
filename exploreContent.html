@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes user-scalable=no"> 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="exploreContent.css">
+      <link rel="stylesheet"  href="animate.css">
+
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+<link type="text/css" rel="stylesheet" href="lightslider.css" />                  
+
+
+  </head>
+
+<body>
+
+
+<div class="body-wrapper"> 
+
+  <div class="sideNav">
+
+    <div class="sideNav-wrapper">
+
+      <ul class="navWrapper">
+        
+        <div class="containerContainer">
+        <li>
+          
+          <span class="a">
+          <i class="fa fa-google" aria-hidden="true"></i>   
+          <p>Google</p>
+          </span>
+         
+        </li>
+        </div>
+
+        <li>
+          <span class="a">
+          <i class="fa fa-video-camera" aria-hidden="true"></i>
+          <p>Zoom</p>
+          </span>
+        
+        </li>
+
+
+
+        <li>
+          <span class="a">
+          <i class="fa fa-facebook" aria-hidden="true"></i>  
+          <p>Facebook</p>
+          </span>
+        
+        </li>
+
+
+        <li>
+          <span class="a">
+          <i class="fa fa-instagram" aria-hidden="true"></i>  
+          <p>Instagram</p>
+          </span>
+        
+        </li>
+
+
+
+        <li>
+          <span class="a">
+          <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>  
+          <p>Snapchat</p>
+          </span>
+        
+        </li>
+
+
+
+        <li>
+          <span class="a">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>  
+          <p>Shopping</p>
+          </span>
+        
+        </li>
+
+
+
+        <li>
+          <span class="a">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>  
+          <p>WhatsaApp</p>
+          </span>
+        
+        </li>
+
+
+
+        <li>
+          <span class="a">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>   
+          <p>E-mail</p>
+          </span>
+        
+        </li>
+
+
+        <li>
+          <span class="a">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>   
+          <p>YouTube</p>
+          </span>
+        
+        </li>
+
+
+
+      </ul>
+        
+
+    </div>
+
+  </div>
+
+
+    <div class="mainContent">
+
+
+      <div class="heading">
+        
+        <h2>DISCOVER</h2>
+
+      </div>
+
+<div class="one">
+ 
+ <div class="item">
+            
+            <ul id="content-slider" class="content-slider2">
+                
+
+
+            
+             
+
+            </ul>
+
+
+  </div>
+
+</div>  
+
+
+<div class="videoDisplaySection" id="videoDisplaySection">
+  
+<div class="videoContainer">
+  
+
+<section id="video">
+
+  </section>
+
+
+</div>
+
+
+<div class="buttonContainer">
+
+  <div>
+
+  <img src="practice.svg">
+
+  </div>
+
+  <div>
+  
+  <a href="https://xd.adobe.com/view/a9939a77-5d95-4a54-a6ab-ce7971d2501d-fcc0/"><button class="button">PRACTICE WITH US</button></a>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+    
+
+   
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="lightslider.js"></script>
+
+<script type="text/javascript">
+
+     $(document).ready(function() {
+      $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true,
+                item:5,
+                control:true,
+                slideMargin:20,
+                autoWidth:true,
+                enableDrag:true
+            });
+            
+    });
+
+$(document).ready(function () {
+
+    var key = 'AIzaSyDb-_nTXUYkFMu0ICs7gY6vVxYOfuo8WWg';
+    var playlistId = 'PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB';
+    var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
+
+
+    var options = {
+        part: 'snippet',
+        key: key,
+        maxResults: 20,
+        playlistId: playlistId
+    }
+
+    loadVids();
+
+    function loadVids() {
+        $.getJSON(URL, options, function (data) {
+            var id = data.items[0].snippet.resourceId.videoId;
+            mainVid(id);
+            resultsLoop(data);
+            console.log(data);
+        });
+    }
+
+    function mainVid(id) {
+        $('#video').html(`
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        `);
+    }
+
+
+
+    
+    function resultsLoop(data) {
+
+        $.each(data.items, function (i, item) {
+
+            var thumb = item.snippet.thumbnails.medium.url;
+            var title = item.snippet.title;
+            var desc = item.snippet.description.substring(0, 5);
+            var vid = item.snippet.resourceId.videoId;
+
+
+        $('.content-slider2').append(`
+                  
+                  
+
+
+                          <div class="containerDiv" data-id="${vid}">
+                <li class="hello">
+                   
+                   <img src="${thumb}">
+
+
+
+                </li>
+
+                <p>${title}</p>
+
+
+                </div>
+
+              
+
+             
+            `);
+      
+        });
+    }
+
+   
+
+
+});
+
+
+
+
+</script>
+
+</body>
+
+</html>
