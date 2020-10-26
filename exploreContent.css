@@ -228,4 +228,65 @@ outline: none;
 
 }
 
+.container-popper{
+
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 100%;
+
+}
+
+.nameYaar{
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: 40px;
+
+
+
+
+}
+
+.testImg{
+
+	width: 35%;
+	background-size: 350px 205px;
+	border-radius: 10px 0px 0px 10px;
+	background-position: center;
+
+
+
+}
+
+.testText{
+
+	width: 65%;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: Montserrat;
+	margin-bottom: 25px;
+	
+}
+
+.testText h4{
+
+	font-size: 28px;
+	margin-bottom: 0px;
+}
+
+.testText p{
+
+	font-size: 12px;
+}
+
+
+
+
+
+
 
