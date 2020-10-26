@@ -516,7 +516,7 @@ outline: none;
 
 }
 
-@media screen and (max-width: 750px) and (orientation: landscape){
+@media screen and (max-width: 896px) and (orientation: landscape){
 
 .videoDisplaySection{
 
