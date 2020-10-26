@@ -286,6 +286,262 @@ outline: none;
 
 
 
+@media screen and (max-width: 1100px) and (orientation: landscape){
+
+
+.body-wrapper{
+
+	width: 100%;
+	display: flex;
+}
+
+.sideNav{
+
+	width: 40%;
+	background-color: #FFF;
+	height: 100vh;
+	position: fixed;
+	display: none;
+
+
+
+
+}
+
+
+.mainContent{
+
+	width: 100%;
+	background-color: transparent;
+	height: 100vh;
+	position: absolute;
+	transform: translateX(0px);
+	
+	
+}
+
+
+
+.mainContent h2{
+
+	font-family: Montserrat;
+	position: absolute;
+	top: 7%;
+	margin-left: 5%;
+	letter-spacing: 2px;
+}
+
+
+.hello{
+
+height: 100px;
+width: 180px;
+background-color: white;
+
+
+}
+
+.item{
+	
+	position: absolute;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+
+
+.lSPager{
+
+	display: none;
+}
+
+
+.one{
+
+	transform: translateY(150px);
+}
+
+
+.item-wrapper p{
+
+
+	font-family: Montserrat;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+.hello img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.containerDiv{
+	
+	width: 180px;
+
+}
+.containerDiv p{
+
+	font-family: Montserrat;
+	font-size: 12px;
+	text-align: center;
+
+	
+
+}
+
+
+.videoDisplaySection{
+
+	width: 90%;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	
+}
+
+
+.videoContainer{
+
+	width: 70%;
+	background-color: white;
+	height: 300px;
+	
+
+}
+
+.buttonContainer{
+	width: 30%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.buttonContainer button{
+
+position: absolute;
+top: 70%;
+left: 60%;
+transform: translate(-50%,-50%);
+padding: 15px 20px 15px 20px;
+border-radius: 50px;
+border: none;
+font-size: 8px;
+font-family: Montserrat;
+background-image: linear-gradient(to left, #6C63FF, #9288F8);
+color: #FFFFFF; 
+letter-spacing: 2px;
+font-weight: 700;
+margin-top: 10px;
+outline: none;
+
+}
+
+
+.buttonContainer img{
+	position: absolute;
+	top: 10%;
+	left: 60%;
+	transform: translateX(-50%);
+	height: 175px;
+	width: 175px;
+
+}
+
+.container-popper{
+
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,50px);
+	
+
+}
+
+.nameYaar{
+
+	width: 100%;
+	height: 80%;
+	display: flex;
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: 40px;
+
+
+
+
+}
+
+.testImg{
+
+	width: 35%;
+	background-size: 350px 205px;
+	border-radius: 10px 0px 0px 10px;
+	background-position: center;
+
+
+
+}
+
+.testText{
+
+	width: 65%;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: Montserrat;
+	margin-bottom: 25px;
+	
+}
+
+.testText h4{
+
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.testText p{
+
+	font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 750px) and (orientation: landscape){
+
+.videoDisplaySection{
+
+
+	transform: translate(-50%,150px);
+
+	
+}
+
+
+.container-popper{
+
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,300px);
+	
+
+}
+
+
+
+
+}
+
 
 
 
