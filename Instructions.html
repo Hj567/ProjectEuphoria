@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes user-scalable=no"> 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="Instructions.css">
+      <link rel="stylesheet"  href="animate.css">
+
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+<link type="text/css" rel="stylesheet" href="lightslider1.css" />                  
+
+
+  </head>
+
+<body>
+
+<div class="responsiveContainer">
+
+<ul id="responsive" class="cs-hidden">
+  
+  <li class="item-a">
+    
+    <div class="selectContainer">
+      
+      <img src="group 555.png">
+      <h2>Select a Topic</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. </p>
+
+    </div>
+
+
+
+
+  </li>
+
+  <li class="item-b">
+
+ <div class="selectContainer">
+      
+      <img src="group 666.png">
+      <h2>Watch the Video</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. </p>
+
+    </div>
+
+
+
+
+  </li>
+
+
+
+
+  <li class="item-c">
+    
+ <div class="selectContainer">
+      
+      <img src="group 777.png">
+      <h2>Practice</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. </p>
+
+    </div>
+
+
+
+  </li>
+
+  <li class="item-d">
+    
+ <div class="selectContainer">
+      
+      <img src="group 888.png">
+      <h2>Start Exploring</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. </p>
+
+    </div>
+
+
+
+  </li>
+
+
+
+</ul>
+
+</div>
+
+  
+  <div class="buttonClass">
+
+
+<a href=exploreContent.html><button class="learn-more">CONTINUE</button></a>
+
+
+</div>
+ 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="lightslider.js"></script>
+
+<script type="text/javascript">
+
+
+
+$(document).ready(function() {
+    $('#responsive').lightSlider({
+        item:1,
+        loop:true,
+        slideMove:2,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        controls:true,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1
+                  }
+            }
+        ]
+    });  
+  });
+
+
+</script>
+
+</body>
+
+</html>

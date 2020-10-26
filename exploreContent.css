@@ -22,6 +22,11 @@ body{
 
 }
 
+.rotateScreen{
+
+	display: none;
+}
+
 .sideNav-wrapper{
 
 	width: 100%;
@@ -590,6 +595,53 @@ outline: none;
 }
 
 
+
+}
+
+@media screen and (orientation: portrait){
+
+.body-wrapper{
+	display: none
+}
+
+
+.rotateScreen{
+display: flex;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+
+
+}
+
+.one {
+
+position: absolute;
+top: 350px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 20px;
+font-family: Montserrat;
+letter-spacing: 2px;
+width: 100%;
+
+}
+
+.two{
+
+position: absolute;
+top: 390px;
+left: 50%;
+transform: translateX(-50%);
+font-size: 15px;
+font-family: Montserrat;
+letter-spacing: 2px;
+width: 100%;
+
+
+}
 
 
 }
